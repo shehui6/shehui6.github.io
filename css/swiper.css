@@ -1,0 +1,534 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    /* Center slide text vertically */
+    /*    display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+}
+/*
+h2{
+    padding:1%;
+    position: relative;
+}
+.bord-top{
+    height: 10%;
+    width: 36%;
+    background-color: #000;
+    position: absolute;
+    top:0;
+    left: 32%;
+}
+.bord-right{
+    height: 9vw;
+    width: 1%;
+    background-color: #000;
+    position: absolute;
+    right: 32%;
+}
+.bord-bottom{
+    height: 8%;
+    width: 36%;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+}
+.bord-left{
+    height: 9vw;
+    width: 1%;
+    background-color: #000;
+    position: absolute;
+    left: 32%;
+}
+*/
+
+/*第一屏开始*/
+.swiper-slide.one {
+    background: rgb(184, 49, 35);
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide.one .top {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+}
+
+.swiper-slide.one .top .ain {
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: white;
+}
+
+.swiper-slide.one .top .sin {
+    width: 15%;
+}
+
+.swiper-slide.one .center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-slide.one img {
+    width: 100%;
+}
+
+.swiper-slide.one .center .tit {
+    width: 80%;
+    height: 20%;
+    overflow: hidden;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+.swiper-slide.one .center .per {
+    width: 12%;
+    top: 35%;
+    left: 44%;
+    position: absolute;
+    z-index: 109;
+}
+
+.swiper-slide.one .center .list {
+    width: 60%;
+    top: 45%;
+    left: 20%;
+    position: absolute;
+    z-index: 109;
+}
+
+.swiper-slide.one .bottom {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(184, 49, 35);
+    z-index: 108;
+}
+
+.swiper-slide.one .bottom .list_a {
+    font-size: 5vw;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 6%;
+}
+
+.swiper-slide.one .bottom .list_s {
+    font-size: 5vw;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 1%;
+}
+
+/*第二屏开始*/
+.swiper-slide.two {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.swiper-slide.two .top {
+    width: 94%;
+    height: 100%;
+    position: absolute;
+    left: 3%;
+    z-index: 101;
+}
+
+.swiper-slide.two .top .ain {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    background: rgb(184, 49, 35);
+    z-index: 102;
+}
+
+.swiper-slide.two .center {
+    width: 88%;
+    height: 90%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 103;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+}
+
+.swiper-slide.two .center .tit {
+    width: 96%;
+    height: 98%;
+    background: white;
+    z-index: 104;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+
+.swiper-slide.two .bottom {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: black;
+    z-index: 105;
+}
+
+.swiper-slide.two .bottom .per {
+    text-align: left;
+}
+.swiper-slide.two .bottom .per p{
+    text-indent: 2em;
+}
+.swiper-slide.two .bottom .list {
+    text-align: right;
+}
+
+/*第三屏开始*/
+.swiper-slide.three {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.swiper-slide.three .top {
+    width: 94%;
+    height: 35%;
+    bottom: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.three .top .ain {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    background: rgb(184, 49, 35);
+}
+
+.swiper-slide.three .center {
+    width: 94%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.three .center .sin {
+    width: 100%;
+    height: 1%;
+    background: rgb(184, 49, 35);
+    position: absolute;
+    top: 0;
+}
+
+.swiper-slide.three .center .din {
+    width: 30%;
+    height: 9%;
+    background: rgb(184, 49, 35);
+    position: absolute;
+    top: 1%;
+    left: 35%;
+}
+.swiper-slide.three .center .din span{
+    font-size: 5vw;
+    position: relative;
+    top: 20%;
+}
+.swiper-slide.three .bottom {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: black;
+    z-index: 105;
+}
+
+.swiper-slide.three .bottom .per {
+    text-align: left;
+}
+.swiper-slide.three .bottom .per p{
+    text-indent: 2em;
+}
+.swiper-slide.three .bottom .list {
+    position: absolute;
+    bottom: 0;
+}
+.swiper-slide.three .bottom .list img{
+    width: 100%;
+    height: 100%;
+}
+/*第四屏开始*/
+
+.swiper-slide.four {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.swiper-slide.four .top {
+    width: 94%;
+    height: 70%;
+    bottom: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.four .top .ain {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    background: rgb(184, 49, 35);
+}
+
+.swiper-slide.four .center {
+    width: 94%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.four .center .sin {
+    width: 100%;
+    height: 1%;
+    background: rgb(184, 49, 35);
+    position: absolute;
+    top: 0;
+}
+
+.swiper-slide.four .bottom {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 105;
+}
+.swiper-slide.four .bottom .tit{
+    height: 20%;
+    color: black;
+ }
+.swiper-slide.four .bottom .per{
+    font-size: 5vw;
+    height: 5%;
+    text-align: left;
+}
+.swiper-slide.four .bottom .per div{
+    border-top: 2px dotted white;
+    border-bottom: 2px dotted white;
+}
+.swiper-slide.four .bottom span{
+    float: right;
+}
+.swiper-slide.four .bottom .list{
+    height: 60%;
+}
+.swiper-slide.four .bottom .list p{
+    text-align: left;
+    border-bottom: 1px dashed white;
+}
+
+
+
+
+
+    /*第五屏开始*/
+
+.swiper-slide.five {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.swiper-slide.five .top {
+    width: 94%;
+    height: 70%;
+    bottom: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.five .top .ain {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    background: rgb(184, 49, 35);
+}
+
+.swiper-slide.five .center {
+    width: 94%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.five .center .sin {
+    width: 100%;
+    height: 1%;
+    background: rgb(184, 49, 35);
+    position: absolute;
+    top: 0;
+}
+.swiper-slide.five .bottom {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 105;
+    color: black;
+}
+.swiper-slide.five .bottom .tit{
+    height: 20%;
+}
+.swiper-slide.five .bottom .per{
+
+    height: 8%;
+}
+.swiper-slide.five .bottom .list{
+    width: 100%;
+    height: 60%;
+}
+
+
+
+
+    /*第六屏开始*/
+
+.swiper-slide.six {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.swiper-slide.six .top {
+    width: 94%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 3%;
+}
+
+.swiper-slide.six .top .ain {
+    width: 12.5%;
+    height: 100%;
+    float: left;
+    background: rgb(184, 49, 35);
+}
+
+.swiper-slide.six .center {
+    width: 94%;
+    height: 25%;
+    top: 0;
+    position: absolute;
+    left: 3%;
+    background: white;
+}
+.swiper-slide.six .bottom {
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 105;
+}
+.swiper-slide.six .bottom .tit{
+    height: 15%;
+    color: black;
+}
+.swiper-slide.six .bottom .per{
+    height: 50%;
+}
+.swiper-slide.six .bottom .per h3{
+    width: 75%;
+    position: relative;
+    left: 12.5%;
+    border-top: 2px dotted white;
+    border-bottom: 2px dotted white;
+}
+.swiper-slide.six .bottom .per input{
+    width: 75%;
+    height: 8%;
+    margin: 5% auto;
+
+}
+.swiper-slide.six .bottom .per .button{
+    width: 50%;
+    color: white;
+    background:black;
+    border: none;
+
+}
+
+
+/*~~~~~~music~~~~*/
+#music{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 9;
+}
+
+#music .music_bg{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+@keyframes music {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#music .music_tu{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    animation: music 2s linear infinite;
+}
